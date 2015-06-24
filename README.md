@@ -4,8 +4,8 @@ The game is made in WPF.
 
 Try become a viral sensation, earn enough from ad income to quit your job, or pollute the internet with videos so bad they have to be shared!
 
-![MainGame](http://mcsyko.github.io/Images/TubeStar/screen1.png)
+![MainGame](http://mchall.github.io/Images/TubeStar/screen1.png)
 > <sup>*Main screen where daily planning occurs*</sup>
 
-![MainGame](http://mcsyko.github.io/Images/TubeStar/screen2.png)
+![MainGame](http://mchall.github.io/Images/TubeStar/screen2.png)
 > <sup>*Video management screen*</sup>
