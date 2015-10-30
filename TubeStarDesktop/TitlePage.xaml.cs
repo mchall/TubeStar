@@ -473,11 +473,6 @@ namespace TubeStar
             }
         }
 
-        private void imgMore_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://tubestar.azurewebsites.net/Translation");
-        }
-
         private void CheckVersion()
         {
             var uri = DataStoreManager.GetDataUri("Version");
@@ -503,7 +498,7 @@ namespace TubeStar
 
         private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://tubestar.azurewebsites.net/");
+            System.Diagnostics.Process.Start("http://gamejolt.com/games/strategy-sim/tubestar/11858/");
         }
     }
 }

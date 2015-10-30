@@ -30,9 +30,9 @@ namespace TubeStar
             {
                 WebClientHelpers.Download<YouTubeCommentResponse>(YouTubeAPI.GetRandomComments(videoId, 50), (r) =>
                 {
-                    if (r != null && r.Feed != null && r.Feed.Entries != null && r.Feed.Entries.Count > 0)
+                    if (r != null && r.Entries != null && r.Entries.Count > 0)
                     {
-                        _videoComments[videoId] = r.Feed.Entries.Select(f => f.Content.Comment).ToList();
+                        _videoComments[videoId] = r.Entries.Select(f => f.Snippet.TopLevelComment.Snippet.Comment).ToList();
                     }
                 }, null);
             }

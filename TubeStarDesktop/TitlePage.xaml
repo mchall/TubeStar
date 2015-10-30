@@ -44,11 +44,6 @@
                     <Image x:Name="imgIndonesia" Height="35" Source="Resources/Languages/Indonesian.png" MouseLeftButtonDown="imgIndonesia_MouseLeftButtonDown"/>
                     <Image x:Name="imgThailand" Height="35" Source="Resources/Languages/Thai.png" MouseLeftButtonDown="imgThailand_MouseLeftButtonDown"/>
 
-                    <Button x:Name="imgMore" Margin="2" Height="35" Click="imgMore_Click">
-                        <Button.Content>
-                            <Image Source="Resources/Plus.png" />
-                        </Button.Content>
-                    </Button>
                     <Button x:Name="imgCustom" Margin="2" Height="35" Click="imgCustom_Click">
                         <Button.Content>
                             <Image Source="Resources/More_icon.png" />

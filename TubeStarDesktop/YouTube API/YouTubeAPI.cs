@@ -27,7 +27,7 @@ namespace TubeStar
 
         public static Uri GetRandomComments(string videoId, int max)
         {
-            var uriString = String.Format("http://gdata.youtube.com/feeds/api/videos/{0}/comments?alt=json&max-results={1}&fields=entry(content)&key={2}",
+            var uriString = String.Format("https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId={0}&maxResults={1}&fields=items/snippet/topLevelComment/snippet/textDisplay&key={2}",
                 videoId, max, ApiKey);
             return new Uri(uriString);
         }
@@ -51,28 +51,35 @@ namespace TubeStar
     [JsonObject()]
     public class YouTubeCommentResponse
     {
-        [JsonProperty("feed")]
-        public YouTubeCommentFeed Feed { get; set; }
+        [JsonProperty("items")]
+        public List<YouTubeCommentItemSnippet> Entries { get; set; }
     }
 
     [JsonObject()]
-    public class YouTubeCommentFeed
+    public class YouTubeCommentItemSnippet
     {
-        [JsonProperty("entry")]
-        public List<YouTubeCommentEntry> Entries { get; set; }
+        [JsonProperty("snippet")]
+        public YouTubeTopLevelComment Snippet { get; set; }
     }
 
     [JsonObject()]
-    public class YouTubeCommentEntry
+    public class YouTubeTopLevelComment
     {
-        [JsonProperty("content")]
-        public YouTubeCommentGroup Content { get; set; }
+        [JsonProperty("topLevelComment")]
+        public YouTubeCommentSnippet TopLevelComment { get; set; }
     }
 
     [JsonObject()]
-    public class YouTubeCommentGroup
+    public class YouTubeCommentSnippet
     {
-        [JsonProperty("$t")]
+        [JsonProperty("snippet")]
+        public YouTubeComment Snippet { get; set; }
+    }
+
+    [JsonObject()]
+    public class YouTubeComment
+    {
+        [JsonProperty("textDisplay")]
         public string Comment { get; set; }
     }
 
