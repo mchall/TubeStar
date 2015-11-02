@@ -502,7 +502,7 @@ namespace TubeStar
 
         private void CosmicLeap_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://gamejolt.com/games/cosmic-leap/95182");
+            System.Diagnostics.Process.Start("http://mcsyko.itch.io/cosmic-leap");
         }
     }
 }
