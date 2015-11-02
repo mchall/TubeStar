@@ -109,7 +109,6 @@ namespace TubeStar
             btnNewGame.Content = EnglishStrings.NewGame.Translate();
             btnTutorial.Content = EnglishStrings.Tutorial.Translate();
             btnCredits.Content = EnglishStrings.Credits.Translate();
-            imgMore.ToolTip = EnglishStrings.Mods.Translate();
             btnExit.Content = EnglishStrings.Exit.Translate();
             txtLogin.Text = EnglishStrings.Login.Translate();
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -35,7 +36,10 @@ namespace TubeStar
                 id = "oHg5SJYRHA0";
             }
 
-            string html = String.Format("<iframe width=\"610\" height=\"343\" src=\"http://www.youtube.com/embed/{0}?rel=0\" frameborder=\"0\"></iframe>", id);
+            string html = "<div style=\"width:100%;height:100 %;width:610px;height:343px;float:none;clear:both;margin:2px auto;\">";
+            html += "<embed src = \"http://www.youtube.com/v/" + id + "?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1\" wmode = \"transparent\" type = \"application/x-shockwave-flash\" width = \"100%\" height = \"100%\" allowfullscreen = \"true\" title = \"Adobe Flash Player\" >";
+            html += "</div>";
+
             this.webView.NavigateToString(html);
         }
 
