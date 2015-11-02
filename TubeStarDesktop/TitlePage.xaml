@@ -12,10 +12,11 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="70*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="30*" />
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0" Grid.ColumnSpan="2" Width="200" Source="Resources/TubeStar.png" Margin="10, 10, 10, 10" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" />
+        <Image Grid.Row="0" Grid.ColumnSpan="3" Width="200" Source="Resources/TubeStar.png" Margin="10, 10, 10, 10" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" />
 
         <ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Auto">
             <StackPanel>
@@ -73,5 +74,20 @@
                 </Button>
             </StackPanel>
         </ScrollViewer>
+
+        <ScrollViewer Grid.Row="1" Grid.Column="2" VerticalScrollBarVisibility="Auto" Padding="0,50,0,0">
+            <StackPanel>
+                <TextBlock Text="More from developer:" FontSize="20" Height="40" HorizontalAlignment="Center" Width="200"  />
+                <Button x:Name="btnCosmicLeap" Height="256" Width="256" Margin="5" Click="CosmicLeap_Click">
+                    <Button.Content>
+                        <StackPanel>
+                            <Image Source="Resources/CosmicLeap.png" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+
+
     </Grid>
 </UserControl>

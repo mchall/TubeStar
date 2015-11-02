@@ -499,5 +499,10 @@ namespace TubeStar
         {
             System.Diagnostics.Process.Start("http://gamejolt.com/games/strategy-sim/tubestar/11858/");
         }
+
+        private void CosmicLeap_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://gamejolt.com/games/cosmic-leap/95182");
+        }
     }
 }
