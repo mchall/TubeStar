@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mike Hall")]
 [assembly: AssemblyProduct("TubeStar")]
-[assembly: AssemblyCopyright("Copyright © Mike Hall 2014")]
+[assembly: AssemblyCopyright("Copyright © Mike Hall 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.6.5.11")]
-[assembly: AssemblyFileVersion("1.6.5.11")]
+[assembly: AssemblyVersion("1.6.5.12")]
+[assembly: AssemblyFileVersion("1.6.5.12")]

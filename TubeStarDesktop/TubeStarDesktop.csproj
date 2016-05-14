@@ -162,6 +162,9 @@
     <Compile Include="UI\ChannelStatsDialog.xaml.cs">
       <DependentUpon>ChannelStatsDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\UpdateDialog.xaml.cs">
+      <DependentUpon>UpdateDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\NewGameDialog.xaml.cs">
       <DependentUpon>NewGameDialog.xaml</DependentUpon>
     </Compile>
@@ -308,6 +311,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\ChannelStatsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UpdateDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -631,7 +638,7 @@
     <Resource Include="Resources\Languages\Georgia.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\cosmicleap.png" />
+    <Resource Include="Resources\update2016.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

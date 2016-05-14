@@ -16,8 +16,6 @@ namespace TubeStar
         public event Action ContinueGameClicked;
         public event Action<bool, bool> NewGameClicked;
 
-        private string _steamUrl;
-
         public TitlePage()
         {
             InitializeComponent();
@@ -25,6 +23,15 @@ namespace TubeStar
             UpdateLoginButton();
             Refresh();
             CheckVersion();
+
+            if (!Properties.Settings.Default.UpdateShown)
+            {
+                UpdateDialog dialog = new UpdateDialog();
+                dialog.ShowDialog();
+
+                Properties.Settings.Default.UpdateShown = true;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void NewGame_Click(object sender, RoutedEventArgs e)
@@ -498,11 +505,6 @@ namespace TubeStar
         private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             System.Diagnostics.Process.Start("http://gamejolt.com/games/strategy-sim/tubestar/11858/");
-        }
-
-        private void CosmicLeap_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://mcsyko.itch.io/cosmic-leap");
         }
     }
 }

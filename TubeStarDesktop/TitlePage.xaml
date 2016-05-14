@@ -75,19 +75,5 @@
             </StackPanel>
         </ScrollViewer>
 
-        <ScrollViewer Grid.Row="1" Grid.Column="2" VerticalScrollBarVisibility="Auto" Padding="0,50,0,0">
-            <StackPanel>
-                <TextBlock Text="More from developer:" FontSize="20" Height="40" HorizontalAlignment="Center" Width="200"  />
-                <Button x:Name="btnCosmicLeap" Height="256" Width="256" Margin="5" Click="CosmicLeap_Click">
-                    <Button.Content>
-                        <StackPanel>
-                            <Image Source="Resources/CosmicLeap.png" />
-                        </StackPanel>
-                    </Button.Content>
-                </Button>
-            </StackPanel>
-        </ScrollViewer>
-
-
     </Grid>
 </UserControl>
