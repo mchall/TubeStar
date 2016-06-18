@@ -7,7 +7,7 @@ namespace TubeStar
 {
     public class YouTubeAPI
     {
-        private const string ApiKey = "AIzaSyDL-vhmr5xpdU0d4sMDUIzQskZnC26ci24";
+        private const string ApiKey = "AIzaSyDt2IG2mpYGRgadq9mMCndggF_uPKEsPsE";
 
         public static Uri GetRandomImages(string search, int max)
         {

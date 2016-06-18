@@ -24,7 +24,7 @@ namespace TubeStar
 
         private void DownloadButton_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://gamejolt.com/games/tubestar-2016/145575/");
+            System.Diagnostics.Process.Start("https://play.google.com/store/apps/details?id=co.za.mikehall.tubestar");
         }
 
         private void OKButton_Click(object sender, RoutedEventArgs e)

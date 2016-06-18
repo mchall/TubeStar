@@ -24,14 +24,8 @@ namespace TubeStar
             Refresh();
             CheckVersion();
 
-            if (!Properties.Settings.Default.UpdateShown)
-            {
-                UpdateDialog dialog = new UpdateDialog();
-                dialog.ShowDialog();
-
-                Properties.Settings.Default.UpdateShown = true;
-                Properties.Settings.Default.Save();
-            }
+            UpdateDialog dialog = new UpdateDialog();
+            dialog.ShowDialog();
         }
 
         private void NewGame_Click(object sender, RoutedEventArgs e)

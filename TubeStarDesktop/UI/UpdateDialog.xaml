@@ -5,7 +5,7 @@
         xmlns:local="clr-namespace:TubeStar" 
         WindowStartupLocation="CenterScreen"
         Title="Update Available"
-        Height="550" Width="700">
+        Height="650" Width="700">
 
     <Grid x:Name="LayoutRoot">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -19,7 +19,7 @@
                     
                     <Image Source="../Resources/update2016.jpg" />
 
-                    <Button x:Name="btnDownload" Grid.Row="1" MinWidth="80" Width="Auto" Height="30" Content="Download TubeStar 2016" Margin="3,3,3,3" Click="DownloadButton_Click"/>
+                    <Button x:Name="btnDownload" Grid.Row="1" MinWidth="80" Width="Auto" Height="40" Content="Get TubeStar on Google Play" FontSize="22" Margin="3,3,3,3" Click="DownloadButton_Click"/>
 
                     <Button x:Name="btnOk" Grid.Row="2" HorizontalAlignment="Right" IsDefault="True" MinWidth="80" Width="Auto" Height="30" Content="OK" Margin="3,3,3,3" Click="OKButton_Click"/>
                 </Grid>
